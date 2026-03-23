@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frost & Fun - Produkter</title>
+    <link rel="stylesheet" href="frost-&-fun.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Frost & Fun 🍦</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="produkter.html">Produkter</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="kurv.html">Kurv</a>
+      </nav>
+    </header>
+
+    <main class="products-page">
+      <section class="products-section">
+        <h2>Vores produkter</h2>
+        <p>Vælg dine favoritter og tilføj dem til kurven.</p>
+        <div id="products" class="products-grid"></div>
+      </section>
+
+      <aside class="cart-section">
+        <h2>Kurv 🛒</h2>
+        <div id="cartItems">
+          <p>Din kurv er tom.</p>
+        </div>
+        <p id="totalPrice">Samlet pris: 0 kr.</p>
+        <button id="clearCartBtn" class="btn">Tøm kurv</button>
+        <button id="checkoutBtn" class="btn">Gå til betaling</button>
+      </aside>
+    </main>
+
+    <script src="frost-&-fun.js"></script>
+  </body>
+</html>

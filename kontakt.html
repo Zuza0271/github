@@ -1,58 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolie</title>
-    <!-- ref til mit eget stylesheet -->
-    <link rel="stylesheet" href="stylesheet.css" />
-    <!-- ref til FontAwesomes stylesheet (så jeg kan bruge deres ikoner) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Shadows+Into+Light+Two&display=swap");
-    </style>
+    <title>Frost & Fun</title>
+    <link rel="stylesheet" href="frost-&-fun.css" />
+    <link rel="stylesheet" href="frost-&-fun.js" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html">Zuzanna Balas</a>
-      </div>
-      <div class="topnav" id="myTopnav">
-        <a href="hjem.html">Hjem</a>
-        <a href="projekter.html">Projekter</a>
-        <a href="om-mig.html">Om mig</a>
+      <h1>Frost & Fun</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="produkter.html">Produkter</a>
         <a href="kontakt.html">Kontakt</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+        <a href="kurv.html">Kurv</a>
+      </nav>
     </header>
-    <div class="container">
-      <article>
-        <h1>Kontakt</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo
-          mollitia ea cum deleniti suscipit voluptatibus accusamus id, quae
-          inventore pariatur ex! Et eius, quidem animi quibusdam quaerat laborum
-          repudiandae assumenda mollitia minima id dolor obcaecati veritatis,
-          possimus atque voluptas debitis quas voluptatem inventore fuga officia
-          accusantium numquam. Voluptate, nemo!
-        </p>
-      </article>
-    </div>
-    <!-- javascript lånt fra W3Schools -->
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
+    <!-- KONTAKT -->
+    <section class="contact-section">
+      <h2>Kontakt os</h2>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Dit navn" required />
+        <input type="email" id="email" placeholder="Din email" required />
+        <textarea id="message" placeholder="Din besked" required></textarea>
+        <button type="submit" class="btn">Send besked</button>
+      </form>
+
+      <p id="response"></p>
+    </section>
+
+    <script src="frost-&-fun.js"></script>
   </body>
 </html>
